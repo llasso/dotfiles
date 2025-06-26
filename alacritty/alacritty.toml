@@ -1,0 +1,67 @@
+
+[window]
+opacity = 0.99
+blur = true
+padding.x = 10
+padding.y = 10
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
+
+
+[font]
+
+normal.family = "Maple Mono"
+size = 11.0
+
+
+[terminal.shell]
+program = "/usr/bin/bash"
+args = ["-l"]
+
+[mouse]
+hide_when_typing = false
+
+
+
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+
+[keyboard]
+bindings = [
+    # Copy (Cmd + C)
+    { key = "C", mods = "Command", action = "Copy" },
+
+    # Paste (Cmd + V)
+    { key = "V", mods = "Command", action = "Paste" },
+
+    # Find (Cmd + F)
+    { key = "F", mods = "Command", action = "SearchForward" },
+
+    # Decrease Font Size (Cmd + -)
+    { key = "Minus", mods = "Command", action = "DecreaseFontSize" },
+
+    # Increase Font Size (Cmd + =)
+    { key = "Equals", mods = "Command", action = "IncreaseFontSize" },
+
+    # Reset Font Size (Cmd + 0)
+    { key = "Key0", mods = "Command", action = "ResetFontSize" },
+
+
+    # Hide Alacritty (Cmd + H)
+    { key = "H", mods = "Command", action = "Hide" },
+
+    # Hide Other Applications (Cmd + Option + H)
+    { key = "H", mods = "Command|Option", action = "HideOtherApplications" },
+]
+
+[general]
+import = [
+  "~/.config/alacritty/mocha.toml"
+]
+
